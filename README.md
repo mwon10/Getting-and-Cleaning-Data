@@ -14,10 +14,20 @@ This is a R script called run_analysis.R that does the following:
 
 The variable descriptions are the following for train and test data:
 
-'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+'Subject': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
+'Activity': Each activity is of the following: 
+1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
 
-'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+The following Variables are for Time, but are same for Frequency:
 
-'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+'TimeBodyAccelerometer': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+
+'TimeGravityAccelerometer': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+
+'TimeBodyGyroscope': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
